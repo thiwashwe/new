@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="assets/css/billingform.css" />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="#" class="logo">
+          <i class="ri-steering-line"></i>
+          RockLand EV Motors
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#featured-car" class="navbar-link" data-nav-link
+                >Explore cars</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>About us</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="header-contact">
+            <a href="tel:09965128567" class="contact-link">+95 965 128 567</a>
+
+            <span class="contact-time">Mon - Sat: 9:00 am - 6:30 pm</span>
+          </div>
+
+          <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+            <ion-icon name="car-outline"></ion-icon>
+
+            <span id="aria-label-txt">Explore cars</span>
+          </a>
+
+          <a href="#" class="btn user-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+
+          <button
+            class="nav-toggle-btn"
+            data-nav-toggle-btn
+            aria-label="Toggle Menu"
+          >
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form action="">
+          <div class="row">
+            <div class="col">
+              <h3 class="title">billing address</h3>
+
+              <div class="inputBox">
+                <span>full name :</span>
+                <input type="text" placeholder="john deo" />
+              </div>
+              <div class="inputBox">
+                <span>email :</span>
+                <input type="email" placeholder="example@example.com" />
+              </div>
+              <div class="inputBox">
+                <span>address :</span>
+                <input type="text" placeholder="room - street - locality" />
+              </div>
+              <div class="inputBox">
+                <span>city :</span>
+                <input type="text" placeholder="mumbai" />
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>state :</span>
+                  <input type="text" placeholder="india" />
+                </div>
+                <div class="inputBox">
+                  <span>zip code :</span>
+                  <input type="text" placeholder="123 456" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <h3 class="title">payment</h3>
+
+              <div class="inputBox">
+                <span>cards accepted :</span>
+                <img src="img/card_img.png" alt="" />
+              </div>
+              <div class="inputBox">
+                <span>name on card :</span>
+                <input type="text" placeholder="mr. john deo" />
+              </div>
+              <div class="inputBox">
+                <span>credit card number :</span>
+                <input type="number" placeholder="1111-2222-3333-4444" />
+              </div>
+              <div class="inputBox">
+                <span>exp month :</span>
+                <input type="text" placeholder="january" />
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>exp year :</span>
+                  <input type="number" placeholder="2022" />
+                </div>
+                <div class="inputBox">
+                  <span>CVV :</span>
+                  <input type="text" placeholder="1234" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" value="proceed to checkout" class="submit-btn" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
