@@ -1,37 +1,37 @@
-"use strict";
+// const formOpenBtn = document.querySelector("#form-open"),
+//   home = document.querySelector(".home"),
+//   formContainer = document.querySelector(".form_container"),
+//   formCloseBtn = document.querySelector(".form_close"),
+//   signupBtn = document.querySelector("#signup"),
+//   loginBtn = document.querySelector("#login"),
+//   pwShowHide = document.querySelectorAll(".pw_hide");
 
-/**
- * navbar toggle
- */
+// formOpenBtn.addEventListener("click", () => home.classList.add("show"));
+// formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
 
-// const overlay = document.querySelector("[data-overlay]");
-// const navbar = document.querySelector("[data-navbar]");
-// const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
-// const navbarLinks = document.querySelectorAll("[data-nav-link]");
-
-// const navToggleFunc = function () {
-//   navToggleBtn.classList.toggle("active");
-//   navbar.classList.toggle("active");
-//   overlay.classList.toggle("active");
-// }
-
-// navToggleBtn.addEventListener("click", navToggleFunc);
-// overlay.addEventListener("click", navToggleFunc);
-
-// for (let i = 0; i < navbarLinks.length; i++) {
-//   navbarLinks[i].addEventListener("click", navToggleFunc);
-// }
-
-/**
- * header active on scroll
- */
-
-// const header = document.querySelector("[data-header]");
-
-// window.addEventListener("scroll", function () {
-//   window.scrollY >= 10 ? header.classList.add("active")
-//     : header.classList.remove("active");
+// pwShowHide.forEach((icon) => {
+//   icon.addEventListener("click", () => {
+//     let getPwInput = icon.parentElement.querySelector("input");
+//     if (getPwInput.type === "password") {
+//       getPwInput.type = "text";
+//       icon.classList.replace("uil-eye-slash", "uil-eye");
+//     } else {
+//       getPwInput.type = "password";
+//       icon.classList.replace("uil-eye", "uil-eye-slash");
+//     }
+//   });
 // });
+
+// signupBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   formContainer.classList.add("active");
+// });
+// loginBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   formContainer.classList.remove("active");
+// });
+
+// navbar
 
 // search-box open close js code
 let navbar = document.querySelector(".navbar");
